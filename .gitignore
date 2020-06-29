@@ -32,3 +32,4 @@ build/
 
 .DS_Store
 .mvn/
+src/main/resources/application.properties

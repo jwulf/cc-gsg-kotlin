@@ -196,7 +196,7 @@ of the workflow:
 
 ```kotlin
 // ...
-public class CloudStarterApplication {
+class CloudStarterApplication {
     var logger: Logger = LoggerFactory.getLogger(javaClass)
 
     // ...
