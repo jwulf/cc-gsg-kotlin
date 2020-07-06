@@ -238,14 +238,14 @@ class CloudStarterApplication {
 
    	@GetMapping("/start")
    	fun startWorkflowInstance(): String? {
-   		val workflowInstanceEvent = client!!
+   		val workflowInstanceEventWithResult = client!!
    				.newCreateInstanceCommand()
    				.bpmnProcessId("test-process")
    				.latestVersion()
    				.withResult()
    				.send()
    				.join()
-   		return workflowInstanceEvent.toString()
+   		return workflowInstanceEventWithResult.toString()
    	}
 }
 ```
